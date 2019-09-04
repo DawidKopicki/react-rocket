@@ -1,8 +1,9 @@
 import React from 'react';
 import ListWrapper from './components/ListWrapper/ListWrapper';
+import Form from './components/Form/Form';
 import './index.css'
 
-const initialStateArray = [
+const initialStateItems = [
         {
             image: 'https://www.tate.org.uk/art/images/research/2148_10.jpg',
             name: 'Dan Abramov',
@@ -31,7 +32,7 @@ const initialStateArray = [
 
 class App extends React.Component {
     state = {
-        items: [...initialStateArray]
+        items: [...initialStateItems]
     };
     render() {
         return (
@@ -39,6 +40,7 @@ class App extends React.Component {
                 <ListWrapper
                     items={this.state.items}
                 />
+                <Form/>
             </div>
         )
     }
