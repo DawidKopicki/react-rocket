@@ -11,6 +11,7 @@ const Input = ({ tag: Tag, name, maxLength, label }) => (
             id={name}  
             maxLength={maxLength}
             placeholder=" "
+            required
         />
         <label className={styles.label} htmlFor={name}>{label}</label>
         <div className={styles.formItemBar}></div>
