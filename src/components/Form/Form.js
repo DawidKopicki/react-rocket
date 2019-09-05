@@ -6,7 +6,7 @@ import Title from '../Title/Title';
 
 const Form = ({submitFn}) => (
     <div className={styles.wrapper}>
-        <h2>Add new twitter account</h2>
+        <Title>Add new twitter account</Title>
         <form 
             autoComplete="off"
             className={styles.form} 
@@ -30,7 +30,7 @@ const Form = ({submitFn}) => (
                 name='description'
                 label="Description"
             />
-            <Title>add new item</Title>
+            <Button>add new item</Button>
         </form>
     </div>
 );
