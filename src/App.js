@@ -5,25 +5,25 @@ import './index.css'
 
 const initialStateItems = [
         {
-            image: 'https://www.tate.org.uk/art/images/research/2148_10.jpg',
+            image: 'https://d2eip9sf3oo6c2.cloudfront.net/instructors/avatars/000/000/032/square_480/oapgW_Fp_400x400.jpg',
             name: 'Dan Abramov',
             description: 'Working on @reactjs. The demo guy.',
             twitterLink: 'https://twitter.com/dan_abramov',
         },
         {
-            image: 'https://www.tate.org.uk/art/images/research/2148_10.jpg',
+            image: 'https://pbs.twimg.com/profile_images/1166030195834273794/pBb6hjVb_400x400.jpg',
             name: 'Ryan Florence',
             description: 'Making React accessible for users and developers at https://reach.tech . Online learning, workshops, OSS, and consulting.',
             twitterLink: 'https://twitter.com/ryanflorence',
         },
         {
-            image: 'https://www.tate.org.uk/art/images/research/2148_10.jpg',
+            image: 'https://miro.medium.com/max/3150/1*2ysGC1u4jayrk3Uu3VG6Zg.jpeg',
             name: 'Michael Jackson',
             description: 'Maker. Co-author of React Router. Working on @ReactTraining. Created @unpkg. Head over heels for @cari.',
             twitterLink: 'https://twitter.com/mjackson',
         },
         {
-            image: 'https://www.tate.org.uk/art/images/research/2148_10.jpg',
+            image: 'https://avatars0.githubusercontent.com/u/1500684?v=4',
             name: 'Kent C. Dodds',
             description: 'Making software development more accessible · Husband, Father, Latter-day Saint, Teacher, OSS, GDE, @TC39 · @PayPalEng @eggheadio @FrontendMasters · #JS',
             twitterLink: 'https://twitter.com/kentcdodds',
