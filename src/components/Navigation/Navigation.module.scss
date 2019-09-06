@@ -3,10 +3,15 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.navigationItem {
+.navItem {
     list-style: none;
 
     &Link {
         text-decoration: none;
+        color: #818181;
+
+        &Active {
+            font-weight: 700;
+        }
     }
 }
