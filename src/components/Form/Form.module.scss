@@ -1,6 +1,5 @@
 .wrapper {
-    width: 50%;
-    margin: 50px auto 100px;;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,4 +12,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    button {
+        margin-top: 50px;
+    }
 }
