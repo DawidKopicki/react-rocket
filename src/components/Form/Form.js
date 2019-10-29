@@ -21,11 +21,20 @@ const descriptions = {
 class Form extends React.Component {
   state = {
     activeOption: types.twitter,
+    title: '',
+    link: '',
+    description: ''
   };
 
   handleRadioButtonChange = type => {
     this.setState({
       activeOption: type,
+    });
+  };
+
+  handleInputChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -65,10 +74,37 @@ class Form extends React.Component {
                       Note
                     </Radio>
                   </div>
-                  <Input name="name" label={activeOption === types.twitter ? 'Twitter Name' : 'Title'} maxLength={30} />
-                  { activeOption !== types.note ? <Input name="link" label={activeOption === types.twitter ? 'Twitter Link' : 'Link'} /> : null }
-                  { activeOption === types.twitter ? <Input name="image" label="Image" /> : null }
-                  <Input tag="textarea" name="description" label="Description" />
+                  <Input
+                      onChange={this.handleInputChange}
+                      value={this.state.title}
+                      name="title"
+                      label={
+                        activeOption === types.twitter ? "Twitter Name" : "Title"}
+                      maxLength={30}
+                  />
+                  { activeOption !== types.note ? (
+                      <Input
+                          onChange={this.handleInputChange}
+                          value={this.state.link}
+                          name="link"
+                          label={activeOption === types.twitter ? "Twitter Link" : "Link"}
+                      />
+                  ) : null }
+                  { activeOption === types.twitter ? (
+                      <Input
+                          onChange={this.handleInputChange}
+                          value={this.state.image}
+                          name="image"
+                          label="Image"
+                      />
+                      ) : null }
+                  <Input
+                      onChange={this.handleInputChange}
+                      value={this.state.description}
+                      tag="textarea"
+                      name="description"
+                      label="Description"
+                  />
                   <Button>add new item</Button>
                 </form>
               </div>
