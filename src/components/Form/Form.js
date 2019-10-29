@@ -78,9 +78,7 @@ class Form extends React.Component {
                       onChange={this.handleInputChange}
                       value={this.state.title}
                       name="title"
-                      label={
-                        type === types.twitter ? "Twitter Name" : "Title"}
-                      maxLength={30}
+                      label={type === types.twitter ? "Twitter Name" : "Title"}
                   />
                   { type !== types.note ? (
                       <Input
